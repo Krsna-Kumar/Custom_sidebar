@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- =====Custom CSS ===== -->
+        <link rel="stylesheet" href="style.css">
+        
+        
+
+        <title>Sidebar sub menus</title>
+    </head>
+    <body id="body-pd">
+        <div class="l-navbar" id="navbar">
+            <nav class="nav">
+                <div>
+                    <div class="nav__brand">
+                        
+                        <!-- <i class="fa-solid fa-bars nav__toggle" id="nav-toggle"></i> -->
+                        <img src="Images/BurgerMenu.png" class="nav__toggle" id="nav-toggle" alt="">
+                        <!-- <ion-icon name="menu" class="nav__toggle" style="font-size: 30px;" id="nav-toggle"></ion-icon> -->
+                        <a href="#" class="nav__logo">RV Tech Software</a>
+                        <!-- <img src="Images/logo_New.png" width="200px" alt=""> -->
+                    </div>
+                    <div class="nav__list">
+                        <div class="nav__link active collapse">
+                            <img src="Images/Home Icon.png" class="nav__icon" alt="">
+                            <!-- <ion-icon name="" class="nav__icon"></ion-icon> -->
+                            <span class="nav__name">Dashboard</span>
+                         
+                            <img src="Images/DownArrow.png" class="collapse__link" alt="">
+                            <!-- <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon> -->
+                         
+                            <ul class="collapse__menu">
+                                <li><a href="#" class="collapse__sublink">Admin Dashboard</a></li>  
+                                <li><a href="#" class="collapse__sublink">OPD Dashboard</a></li>
+                                <li><a href="#" class="collapse__sublink">IPD Dashboard</a></li>
+                                <li><a href="#" class="collapse__sublink">Pharmacy Dashboard</a></li>
+                                <li><a href="#" class="collapse__sublink">Doctor Dashboard</a></li>
+                                <li><a href="#" class="collapse__sublink">Lab Dashboard</a></li>
+                            </ul>
+                         </div>
+                        <a href="#" class="nav__link">
+                            <img src="Images/Opd_Icon.png" class="nav__icon" alt="">
+                            <!-- <ion-icon name="body-outline" class="nav__icon"></ion-icon> -->
+                            <span class="nav__name">OPD</span>
+                        </a>
+
+                        <div  class="nav__link collapse">
+                            <img src="Images/Master_Icon.png" class="nav__icon" alt="">
+
+                            <span class="nav__name">Master Management</span>
+                            <img src="Images/DownArrow.png" class="collapse__link" alt="">
+
+                            <!-- <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon> -->
+
+                            <ul class="collapse__menu">
+                                <a href="#" class="collapse__sublink">Area Master</a>
+                                <a href="#" class="collapse__sublink">Blood Group Master</a>
+                                <a href="#" class="collapse__sublink">Bed Master</a>
+                                <a href="#" class="collapse__sublink">Doctor Master</a>
+                                <a href="#" class="collapse__sublink">Country Master</a>
+                                <a href="#" class="collapse__sublink">State Master</a>
+                                <a href="#" class="collapse__sublink">City Master</a>
+                                <a href="#" class="collapse__sublink">Tender Master</a>
+                                <a href="#" class="collapse__sublink">Qualification Master</a>
+                                <a href="#" class="collapse__sublink">Occupation Master</a>
+                                <a href="#" class="collapse__sublink">Nationality Master</a>
+                            </ul>
+                        </div>
+
+                        <a href="#" class="nav__link">
+                            <img src="Images/Report_Icon.png" class="nav__icon" alt="">
+
+                            <span class="nav__name">Report</span>
+                        </a>
+                        <!-- <div class="nav__link collapse">
+                            <img src="Images/Home Icon.png" class="nav__icon alt="">
+
+                            <span class="nav__name">Doctor</span>
+
+                            <img src="Images/DownArrow.png" class="collapse__link alt="">
+
+                            
+                            <ul class="collapse__menu">
+                                <a href="#" class="collapse__sublink">Permanent Doctor</a>
+                                <a href="#" class="collapse__sublink">Refered Doctor</a>
+                                <a href="#" class="collapse__sublink">Intern Doctor</a>
+                            </ul>
+                        </div>
+                        <a href="#" class="nav__link">
+                            <img src="Images/Home Icon.png" class="nav__icon alt="">
+
+                            <span class="nav__name">Settings</span>
+                        </a> -->
+                    </div>
+                </div>
+
+                <!-- <a href="#" class="nav__link">
+                    <img src="Images/Logout.png" class="nav__icon alt="">
+
+                    <span class="nav__name">Log Out</span>
+                </a> -->
+
+                <!-- <div class="illustration" id="illustration">
+                    <img src="Images/Doc_illustration.svg" alt="">
+                </div> -->
+            </nav>
+        </div>
+        
+        <div class="main-section">
+          <div class="header">
+               <!-- <h2>Poddar Nursing Home Pvt. Ltd.</h2> -->
+            <div class="header-txt">
+                <h2>Poddar Nursing Home Pvt. Ltd.</h2>
+                <p>Financial Year: 2023-2024</p>
+            </div>
+            <div class="header-option">
+                
+                <a href="#" class="setting-icon"><img src="Images/Settings.png" alt=""></a>
+                <a href="#" class="bell-icon"><img src="Images/Bell Icon.png" alt=""></a>
+                <div class="profile">
+                    <!-- <a href="#"><i class="bi bi-person-fill"></i></a> -->
+                    <img src="Images/Dcotor.jpg" alt="" onclick="toggleProfile()">
+                </div>
+            </div>
+
+            <div class="submenu-wrap" id="submenu">
+                <div class="sub-header">
+                    <div class="profile">
+                        <!-- <a href="#"><i class="bi bi-person-fill"></i></a> -->
+                        <img src="Images/Dcotor.jpg" alt="">
+                    </div>
+                    <div class="profile-header">
+                    <span>Veenita Mehra</span>
+                        <p style="font-size: 3px;">23-3-2024 4:45:44</p>
+                    </div>
+                    
+                    
+                </div>
+                <div class="sub-option">
+                    <a href="#">Home</a>
+                    <p>I</p>
+                    <a href="#">Log Out</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="main-body">
+            
+          </div>
+        </div>
+        
+        
+        <!-- ===== MAIN JS ===== -->
+        <script src="script.js"></script>
+    </body>
+</html>
